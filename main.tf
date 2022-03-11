@@ -8,7 +8,7 @@ data "aws_ami" "this" {
   }
 
   filter {
-    name   = "arch"
+    name   = "architecture"
     values = var.instance_arch
   }
 
