@@ -5,6 +5,12 @@ variable "environment" {
 
 }
 
+variable "az" {
+  type        = string
+  description = "(optional) describe your variable"
+  default     = "us-east-1"
+}
+
 variable "instance_type" {
   type        = string
   description = "AWS/EC2 instance type."
@@ -23,8 +29,8 @@ variable "security_group_ids" {
 
 variable "instance_owner" {
   type        = list(string)
-  description = "Instance name."
-  default     = ["impish"]
+  description = "Instance owner."
+  default     = ["099720109477"]
 }
 
 variable "instance_name" {
