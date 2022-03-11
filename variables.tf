@@ -14,7 +14,7 @@ variable "ami_id" {
 variable "az" {
   type        = string
   description = "(optional) describe your variable"
-  default     = "us-east-1"
+  default     = "us-east-1a"
 }
 
 variable "instance_type" {
