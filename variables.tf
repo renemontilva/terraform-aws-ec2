@@ -5,6 +5,12 @@ variable "environment" {
 
 }
 
+variable "ami_id" {
+  type        = string
+  description = "(optional) describe your variable"
+  default     = "ami-0e1d30f2c40c4c701"
+}
+
 variable "az" {
   type        = string
   description = "(optional) describe your variable"
